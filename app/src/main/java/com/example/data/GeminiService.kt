@@ -164,4 +164,29 @@ object GeminiClient {
             null
         }
     }
+
+    suspend fun sendMessage(history: List<Content>, newMessage: String): String? = withContext(Dispatchers.IO) {
+        val apiKey = getApiKey()
+        if (apiKey.isEmpty()) {
+            return@withContext "Error: No API key provided."
+        }
+
+        try {
+            val userContent = Content(
+                role = "user",
+                parts = listOf(Part(text = newMessage))
+            )
+            
+            val requestContents = history + userContent
+
+            val request = GenerateContentRequest(
+                contents = requestContents
+            )
+            val response = api.generateContent(apiKey, request)
+            response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text
+        } catch (e: Exception) {
+            Log.e(TAG, "Chat generation failed", e)
+            null
+        }
+    }
 }
