@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "NEUROBIN ALEPH-Σ"
 
-include(":app")
+include("NEUROBIN ALEPH-Σ:Versión de la app21.38.124-SECONDARY")
