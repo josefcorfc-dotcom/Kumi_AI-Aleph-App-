@@ -1,6 +1,8 @@
 {
   "name": "NEUROBIN ALEPH-Σ",
   "description": "Sistema de seguridad cibernética, matriz de Cantor y diagnóstico cognitivo de integridad para Nodo SQ-3000_G6.",
-  "requestFramePermissions": [],
+  "requestFramePermissions": [Versión de la app
+
+21.38.124-SECONDARY],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
