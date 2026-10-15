@@ -11,3 +11,9 @@
         alt="ORCID iD icon"/>
       https://orcid.org/0009-0007-6963-1205
     </a>
+< npx cap sync android
+npx cap update android
+cd android
+./gradlew clean
+./gradlew assembleDebug
+>
