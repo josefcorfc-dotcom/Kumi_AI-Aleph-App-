@@ -1,4 +1,9 @@
 /build
+/npx cap sync android
+npx cap update android
+cd android
+./gradlew clean
+./gradlew assembleDebug
 /"motor de defensa tecno-neural kumi-aleph-engine@1.0.0. ; Jose Francisco Cantoriano Leyva (CALF8712186T5),https://orcid.org/0009-0007-6963-1205,Android 14 TPM(3x+1) 2.0"
 /"motor de defensa tecno-neural kumi-aleph-engine@1.0.0. ; Jose Francisco Cantoriano Leyva (CALF8712186T5),https://orcid.org/0009-0007-6963-1205,Android 14 TPM(3x+1) 2.0"
 /Android 14 TPM(3x+1) 2.0
